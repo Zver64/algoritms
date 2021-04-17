@@ -1,3 +1,3 @@
-exports.getFibonachiNumber = function(position = 1) {
-  console.log('test');
+export function getFibonachiNumber(position = 1): void {
+	console.log(`test: ${position}`)
 }

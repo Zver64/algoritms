@@ -1,5 +1,5 @@
 /** A simple playground for testing purposes */
 
-const {getFibonachiNumber} = require('./algoritms/fibonachi')
+import { getFibonachiNumber } from "./algoritms/fibonachi"
 
-getFibonachiNumber(4);
+getFibonachiNumber(4)

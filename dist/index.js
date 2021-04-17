@@ -1,3 +1,5 @@
+"use strict";
 /** A simple playground for testing purposes */
-var getFibonachiNumber = require('./algoritms/fibonachi').getFibonachiNumber;
-getFibonachiNumber(4);
+Object.defineProperty(exports, "__esModule", { value: true });
+var fibonachi_1 = require("./algoritms/fibonachi");
+fibonachi_1.getFibonachiNumber(4);

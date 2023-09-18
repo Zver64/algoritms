@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsc --watch",
+    "build": "rm -rf ./dist && tsc",
     "lint": "eslint --fix ./src/**/*.ts",
     "prepare": "husky install",
     "pre-commit": "lint-staged"

@@ -19,7 +19,7 @@ function sumThree(a, b, c) {
 }
 
 function curry(cb) {
-  const allArgs = []
+  let allArgs = []
 
   return function curried(...args) {
     allArgs = allArgs.concat(args)

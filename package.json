@@ -11,7 +11,10 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.ts": ["yarn lint", "git add ."]
+    "*.ts": [
+      "yarn lint",
+      "git add ."
+    ]
   },
   "devDependencies": {
     "@types/node": "^14.14.41",

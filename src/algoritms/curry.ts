@@ -1,19 +1,3 @@
-// function square(x = 0) {
-//   return x ** 2
-// }
-
-// function multiply(x = 0) {
-//   return x * 2
-// }
-
-// function sum(x = 0) {
-//   return x + x
-// }
-
-// const first = 3
-
-// console.log("test: ", sum(multiply(square(first))))
-
 function sumThree(a, b, c) {
   return a + b + c
 }

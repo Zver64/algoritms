@@ -1,3 +1,22 @@
-export function getFibonachiNumber(position = 1): void {
-  console.log(`test: ${position}`)
+import assert = require('assert')
+
+export function getFibExp(n = 1): number {
+  if (n <= 2) {
+    return 1
+  }
+  return getFibExp(n - 1) + getFibExp(n - 2)
 }
+
+export function getFibMem(n = 1, memo = {}): number {
+  if (n in memo) {
+    return memo[n]
+  }
+  if (n <= 2) {
+    return 1
+  }
+  memo[n] = getFibMem(n - 1, memo) + getFibMem(n - 2, memo)
+  return memo[n]
+}
+
+assert.strictEqual(getFibMem(42), 267914296)
+assert.strictEqual(getFibExp(42), 267914296)

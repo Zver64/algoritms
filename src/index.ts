@@ -1,5 +1,5 @@
 /** A simple playground for testing purposes */
 
-import { getFibonachiNumber } from "./algoritms/fibonachi"
+import { getFibExp } from './algoritms/fibonachi'
 
-getFibonachiNumber(4)
+console.log(getFibExp(4))

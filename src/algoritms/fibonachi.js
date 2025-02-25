@@ -1,13 +1,13 @@
-import assert = require('assert')
+import assert from 'assert'
 
-export function getFibExp(n = 1): number {
+export function getFibExp(n = 1) {
   if (n <= 2) {
     return 1
   }
   return getFibExp(n - 1) + getFibExp(n - 2)
 }
 
-export function getFibMem(n = 1, memo = {}): number {
+export function getFibMem(n = 1, memo = {}) {
   if (n in memo) {
     return memo[n]
   }

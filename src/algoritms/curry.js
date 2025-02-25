@@ -1,4 +1,4 @@
-import assert = require('assert')
+import assert from 'assert'
 
 function sumThree(a, b, c) {
   return a + b + c
@@ -16,7 +16,21 @@ function curry(cb) {
   }
 }
 
+function curry2(cb) {
+
+  return function curried(...args) {
+    if (args.length >= cb.length) {
+      return cb(...args);
+    } else {
+      return function (...rest) {
+        return curried(...args, ...rest)
+      }
+    }
+  }
+}
+
 assert.strictEqual(curry(sumThree)(2)(2)(2), sumThree(2, 2, 2))
+assert.strictEqual(curry2(sumThree)(2)(2)(2), sumThree(2, 2, 2))
 
 function curryCheck(cb) {
   return function curried(...args) {

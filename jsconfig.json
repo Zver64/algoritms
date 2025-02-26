@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+      "module": "esnext",        // Use ES modules
+      "target": "es6",          // Target ES6
+      "checkJs": true,          // Enable type checking for JavaScript files
+      "baseUrl": "./src",          // Base directory for module resolution
+  },
+  "include": ["src/**/*.js"],       // Include all JavaScript files
+  "exclude": ["node_modules"]   // Exclude node_modules
+}

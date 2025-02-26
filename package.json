@@ -5,7 +5,6 @@
   "author": "zver64 <coolvill@mail.ru>",
   "license": "MIT",
   "type": "module",
-  "module": "esnext",
   "scripts": {
     "lint": "eslint --fix ./src/**/*.js",
     "prepare": "husky install",

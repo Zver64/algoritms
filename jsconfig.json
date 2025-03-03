@@ -3,7 +3,7 @@
       "module": "NodeNext",
       "checkJs": true,
       "baseUrl": "./src",  
-      "moduleResolution": "node",
+      "moduleResolution": "NodeNext",
   },
   "include": ["src/**/*.js"],       // Include all JavaScript files
   "exclude": ["node_modules"]   // Exclude node_modules

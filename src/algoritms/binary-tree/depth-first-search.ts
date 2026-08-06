@@ -1,4 +1,4 @@
-import { TreeNode } from "./types.js";
+import { TreeNode } from "./types.ts";
 
 
 // Complexity for both versions:

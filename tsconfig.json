@@ -2,6 +2,8 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "types": ["node"],
     "allowJs": true,
     "checkJs": false

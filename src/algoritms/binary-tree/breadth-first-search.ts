@@ -1,4 +1,4 @@
-import { TreeNode } from "./types.js";
+import { TreeNode } from "./types.ts";
 
 // Using front is optimal in JavaScript/TypeScript. Do not use queue.shift(), because shifting an array is O(n).
 // Complexity:

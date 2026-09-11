@@ -1,4 +1,8 @@
-// limits simultanieously executing promises
+/**
+ * Runs promise-producing tasks while allowing at most `limit` tasks to execute
+ * concurrently. Results are returned in input order, and the returned promise
+ * rejects if any task rejects.
+ */
 async function PromiseAllWithLimit(tasks: (() => Promise<unknown>)[], limit: number) {
   const pendingTasks = new Set();
   const results = [];
